@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:id="@+id/backgroundimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wingwatch_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_selector"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Back"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Registertxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/lily_script_one"
+                android:text="Register"
+                android:textColor="#000000"
+                android:textSize="80sp" />
+
+            <EditText
+                android:id="@+id/EmailEtxt"
+                android:layout_width="329dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/Registertxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:fontFamily="@font/alfa_slab_one"
+                android:inputType="textPersonName"
+                android:text="Email:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/UsernameEtxt"
+                android:layout_width="329dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/EmailEtxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:fontFamily="@font/alfa_slab_one"
+                android:inputType="textPersonName"
+                android:text="UserName:"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/PasswordLinLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/UsernameEtxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/PasswordEtxt"
+                    android:layout_width="250dp"
+                    android:layout_height="78dp"
+                    android:background="@drawable/edit_text_border"
+                    android:ems="10"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:inputType="textPassword"
+                    android:text="Password:"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/showHideBtn"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#AFAFAF"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="Show"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Registerbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PasswordLinLay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_selector"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Register"
+                android:textColor="#000000"
+                android:textSize="28sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
